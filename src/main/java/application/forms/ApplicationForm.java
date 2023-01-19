@@ -31,7 +31,7 @@ public class ApplicationForm extends JFrame {
         top.setLayout(new BorderLayout());
 
         inputField = new JTextField();
-        inputField.setFont(new Font("TimesRoman", Font.BOLD, 14));
+        inputField.setFont(new Font("TimesRoman", Font.BOLD, 25));
 
         inputField.setEditable(false);
         top.add(inputField);
@@ -70,7 +70,7 @@ public class ApplicationForm extends JFrame {
             digitsPanel.add(btn);
         }
 
-        JButton calc = getJButtonOther("=");
+        JButton calc = getJButtonOther("="); // =
         calc.addActionListener(e -> {
             Double result = calcultaionProcess.addOperand(getLastInputNum());
             showResult(result);
